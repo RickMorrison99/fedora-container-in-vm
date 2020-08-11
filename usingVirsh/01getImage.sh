@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BU=https://download.fedoraproject.org/pub/fedora/linux/releases/30/Cloud/x86_64/images/
+BU=https://download.fedoraproject.org/pub/fedora/linux/releases/32/Cloud/x86_64/images/
 
 [ -d tmp ] || mkdir tmp
 

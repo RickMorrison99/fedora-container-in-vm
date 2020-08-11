@@ -1,10 +1,10 @@
 #!/bin/bash
 
-ISO=`virsh vol-dumpxml --pool default f30-seed.iso | grep "<path>" | tr "<>" "\n" | grep /var/lib`
-IMG=`virsh vol-dumpxml --pool default f30.qcow2 | grep "<path>" | tr "<>" "\n" | grep /var/lib`
+ISO=`virsh vol-dumpxml --pool default f32-seed.iso | grep "<path>" | tr "<>" "\n" | grep /var/lib`
+IMG=`virsh vol-dumpxml --pool default f32.qcow2 | grep "<path>" | tr "<>" "\n" | grep /var/lib`
 
 virt-install \
-    --name f30 \
+    --name f32 \
     --ram=2048 \
     --vcpus=2 --cpu host \
     --hvm \

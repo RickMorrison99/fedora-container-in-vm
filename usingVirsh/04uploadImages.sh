@@ -6,8 +6,8 @@ ISO=tmp/work-seed.iso
 SISO=$(stat -Lc%s "$ISO")
 SIMG=$(stat -Lc%s "$IMG")
 
-virsh vol-create-as default f30-seed.iso $SISO --format raw
-virsh vol-create-as default f30.qcow2    $SIMG --format qcow2
+virsh vol-create-as default f32-seed.iso $SISO --format raw
+virsh vol-create-as default f32.qcow2    $SIMG --format qcow2
 
-virsh vol-upload --pool default f30-seed.iso $ISO
-virsh vol-upload --pool default f30.qcow2    $IMG
+virsh vol-upload --pool default f32-seed.iso $ISO
+virsh vol-upload --pool default f32.qcow2    $IMG
